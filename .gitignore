@@ -1,0 +1,6 @@
+*.class
+.idea/
+build/
+.DS_Store
+opencode.json
+.env
