@@ -23,5 +23,17 @@ public class ScoreCalc {
         System.out.printf(Locale.US, "自动转换 int→double：%.1f%n", automaticConversion);
         System.out.printf("强制转换 double→int：%d%n", forcedConversion);
         System.out.printf("byte 溢出：(byte)300 = %d%n", overflow);
+        System.out.printf("平均分等级：%s%n", grade(average));
+    }
+
+    public static String grade(double average) {
+        if (average >= 90) {
+            return "优秀";
+        } else if (average >= 80) {
+            return "良好";
+        } else if (average >= 60) {
+            return "及格";
+        }
+        return "不及格";
     }
 }
